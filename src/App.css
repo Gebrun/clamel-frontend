@@ -1,43 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
@@ -84,7 +44,7 @@ p {
     border: 1px solid #4ca1af;
     border-radius: 30px;
     margin: .5em 0;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .btn:hover {
@@ -92,13 +52,12 @@ p {
     color: #000000;
 }
 
-
 /* Navbar */
 
 nav {
     width: 100%;
     background: #4ca1af;
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     height: 50px;
 }
@@ -160,7 +119,7 @@ a:hover {
     width: 100%;
     height: 500px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 #design h1 {

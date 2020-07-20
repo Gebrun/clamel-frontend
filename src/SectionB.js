@@ -17,7 +17,7 @@ const SectionB = () => {
                   <br />- Yo Gotti -
                 </p>
               </div>
-              <a href="#">
+              <a href="/projects">
                 <button className="card-btn1">More ideas</button>
               </a>
             </div>
@@ -33,7 +33,7 @@ const SectionB = () => {
                   <br />- Charlotte Moss -
                 </p>
               </div>
-              <a href="#">
+              <a href="/projects">
                 <button className="card-btn2">More ideas</button>
               </a>
             </div>
@@ -50,7 +50,7 @@ const SectionB = () => {
                   <br />- Philip Johnson -
                 </p>
               </div>
-              <a href="#">
+              <a href="/projects">
                 <button className="card-btn3">More ideas</button>
               </a>
             </div>

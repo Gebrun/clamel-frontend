@@ -20,7 +20,7 @@ const Login = () => {
     // Start loading
     setState({ ...state, loading: true });
 
-    fetch("http://localhost:8081/users/login", {
+    fetch(`${process.env.REACT_APP_API_URL}users/login`, {
       method: "POST",
       body: JSON.stringify({
         email: emailField.value,
@@ -54,7 +54,7 @@ const Login = () => {
 
   // If the user is loggedIn, redirect them
   if (globalState.loggedIn === true) {
-    return <Redirect to="/" />;
+    return (<Redirect to="/"/>)
   }
 
   // Otherwise, show the login form
@@ -93,7 +93,10 @@ const Login = () => {
             </button>
             <p>
               If you're not a registered user, click{" "}
-              <Link to="/register" className="registerlink">here</Link> to create an account
+              <Link to="/register" className="registerlink">
+                here
+              </Link>{" "}
+              to create an account
             </p>
           </form>
         </div>

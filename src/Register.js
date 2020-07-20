@@ -56,7 +56,7 @@ const Register = () => {
       });
     }
 
-    fetch("http://localhost:8081/users/register", {
+    fetch(`${process.env.REACT_APP_API_URL}users/register`, {
       method: "POST",
       body: JSON.stringify({
         firstName: firstNameField.value,
@@ -89,7 +89,7 @@ const Register = () => {
 
   // If the user is registered, redirect them
   if (state.registered === true) {
-    return <Redirect to="/login" />;
+    return (<Redirect to="/login"/>)
   }
 
   // Otherwise, show the registration form
@@ -101,7 +101,7 @@ const Register = () => {
         <div className="login-box">
           <h2>Register</h2>
           <form>
-          <div className="user-box">
+            <div className="user-box">
               <input
                 ref={(comp) => (firstNameField = comp)}
                 type="text"
