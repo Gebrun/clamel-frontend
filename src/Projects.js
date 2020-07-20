@@ -24,13 +24,6 @@ const Projects = () => {
 
         </div>
       </header>
-
-
-
-
-
-
-
     <div className="imageGrid">
       <div
         className="tile">
