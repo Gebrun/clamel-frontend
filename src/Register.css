@@ -73,7 +73,7 @@ html {
     font-size: 12px;
   }
   
-  .login-box form button {
+  .login-box div button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;

@@ -65,7 +65,7 @@ const Login = () => {
         <div className="bg-image2"></div>
         <div className="login-box">
           <h2>Login</h2>
-          <form>
+          <div className="login">
             <div className="user-box">
               <input
                 ref={(comp) => (emailField = comp)}
@@ -98,7 +98,7 @@ const Login = () => {
               </Link>{" "}
               to create an account
             </p>
-          </form>
+          </div>
         </div>
       </div>
     );

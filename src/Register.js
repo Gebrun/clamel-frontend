@@ -81,6 +81,7 @@ const Register = () => {
         } else {
           //alert("Please check all the fields");
           setState({
+            ...state,
             loading: false,
           });
         }
@@ -100,7 +101,7 @@ const Register = () => {
         <div className="bg-image3"></div>
         <div className="login-box">
           <h2>Register</h2>
-          <form>
+          <div className="register">
             <div className="user-box">
               <input
                 ref={(comp) => (firstNameField = comp)}
@@ -153,7 +154,7 @@ const Register = () => {
               </Link>{" "}
               to Login.
             </p>
-          </form>
+          </div>
         </div>
       </div>
     );
