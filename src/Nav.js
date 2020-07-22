@@ -19,13 +19,13 @@ const Nav = () => {
   return (
     <div>
       <nav>
-        <a href="http://localhost:3000/" className="navlogo">Home</a>
+        <a href="/" className="navlogo">Home</a>
         <ul className="navbar">
           <li>
             <a href="#section-d">About</a>
           </li>
           <li>
-            <a href="http://localhost:3000/products">Products</a>
+            <a href="/products">Products</a>
           </li>
           {/* <li>
             <a href="https://clamelconstruction.com" target="_blank">
