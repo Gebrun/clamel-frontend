@@ -25,7 +25,7 @@ const Nav = () => {
             <a href="#section-d">About</a>
           </li>
           <li>
-            <a href="http://localhost:3000/projects">Projects</a>
+            <a href="http://localhost:3000/products">Products</a>
           </li>
           {/* <li>
             <a href="https://clamelconstruction.com" target="_blank">

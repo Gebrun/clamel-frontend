@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: #2f3640;
+  background: #2f3640 !important;
   color: #fff;
   font-size: 1.1em;
   line-height: 1.5;

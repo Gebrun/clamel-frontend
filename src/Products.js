@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import AppContext from "./AppContext";
 
 const Products = () => {
+
+  const [globalState, setGlobalState] = useContext(AppContext);
+  const [state, setState] = useState({products:[]})
+
+  useEffect(
+    () => {
+      // only fetch products if and when the user logs in
+      if(globalState.loggedIn === true) {
+        fetch(`${process.env.REACT_APP_API_URL}products`)
+        .then(
+          (result)=>result.json()
+        )
+        .then (
+          (json)=> {
+            setState(
+              {
+                ...state,
+                products: json.products
+              }
+            )
+          }
+        );
+      }
+    },
+    [ globalState.loggedIn ]
+  )
+
   return (
     <div>
       <Nav />
@@ -38,7 +66,7 @@ const Products = () => {
                   <br />
                 </p>
               </div>
-              <a href="/survey">
+              <a href="https://codepen.io/Gebrun/full/yLeZzqJ">
                 <button className="card-btn11">Inquire product</button>
               </a>
             </div>
@@ -53,7 +81,7 @@ const Products = () => {
                   <br />
                 </p>
               </div>
-              <a href="/survey">
+              <a href="https://codepen.io/Gebrun/full/yLeZzqJ">
                 <button className="card-btn22">Inquire product</button>
               </a>
             </div>
@@ -70,7 +98,7 @@ const Products = () => {
                   <br/>
                 </p>
               </div>
-              <a href="/survey">
+              <a href="https://codepen.io/Gebrun/full/yLeZzqJ">
                 <button className="card-btn33">Inquire product</button>
               </a>
             </div>
