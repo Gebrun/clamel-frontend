@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import AppContext from './AppContext';
 import Landing from './Landing';
 import Projects from './Projects';
+import Products from './Products';
 import Login from './Login';
 import Register from './Register';
 import Settings from './Settings';
@@ -10,6 +11,7 @@ import './App.css';
 import './Login.css';
 import './Register.css';
 import './Projects.css';
+import './Products.css';
 // import Nav from './Nav';
 // import Header from './Header';
 // import SectionA from './SectionA';
@@ -54,6 +56,7 @@ return (
       <Switch>
         <Route path="/" exact={true} component={Landing}/>
         <Route path="/projects" exact={true} component={Projects}/>
+        <Route path="/products" exact={true} component={Products}/>
         <Route path="/login" exact={true} component={Login}/>
         <Route path="/register" exact={true} component={Register}/>
         <PrivateRoute path="/settings" exact={true} component={Settings}/>

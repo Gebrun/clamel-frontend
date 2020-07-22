@@ -40,9 +40,11 @@ const Nav = () => {
         )}
 
         {globalState.loggedIn === true && (
-          <button onClick={logOut}>
+          <button className="logout" onClick={logOut}>
+            <Link to="/">
             Log Out
-          </button>
+            </Link>
+            </button>
         )}
           </li>
         </ul>
